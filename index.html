@@ -585,7 +585,7 @@
   <div class="contactform">
     <!-- <form action="https://www.youtube.com"> -->
       <!-- <form action="connected.html" method="post"> -->
-        <form onsubmit="formsubmission()" method="post" name="google-sheet">
+        <form method="post" name="google-sheet">
       <label for="name"></label>
       <input type="text" id="name" name="name" placeholder="Name" class="contactinput" required><br><br>
   
@@ -753,12 +753,6 @@
 
 
   <script>
-    function formsubmission() {
-      alert("Thank you for reaching out, I will contact you shortly");
-    }
-    </script>
-
-  <script>
 
 
     var coll = document.getElementsByClassName("collapsible");
@@ -778,10 +772,6 @@
   </script>
 
 
-
-
-
-
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbz9XoECDyZWPdBE4gAyV1kVSKfxAlIK1QUcxcxjgKEGOqKmFINQgC_gUpmcTQhhBKOwEQ/exec'
   const form = document.forms['google-sheet']
@@ -789,7 +779,7 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .then(response => alert("Thank you for reaching out, I will contact you shortly"))
       .catch(error => console.error('Error!', error.message))
   })
 </script>
