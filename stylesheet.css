@@ -1012,6 +1012,8 @@ body {
         border-radius: 8px;
         background-color: #e9f2f3;
     font-family: 'Quicksand', sans-serif;
+            font-size: 1vw;
+
 
     }
 }
@@ -1044,6 +1046,8 @@ body {
         border-radius: 8px;
         background-color: #e9f2f3;
     font-family: 'Quicksand', sans-serif;
+            font-size: 1vw;
+
 
     }
 }
@@ -1089,6 +1093,8 @@ body {
         border: 1px solid #5779be;
         border-radius: 8px;
         background-color: #e9f2f3;
+            font-size: 1vw;
+
     }
 }
 
